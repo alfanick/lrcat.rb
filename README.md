@@ -1,4 +1,6 @@
 # Lrcat.rb
+[![Code Climate](https://codeclimate.com/github/maxmouchet/lrcat.rb.png)](https://codeclimate.com/github/maxmouchet/lrcat.rb)
+[![Gem Version](https://badge.fury.io/rb/lrcat.png)](http://badge.fury.io/rb/lrcat)
 
 ActiveRecord mappings for the Lightroom Catalog.
 
