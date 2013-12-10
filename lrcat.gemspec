@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Lrcat::VERSION
   spec.authors       = ['Maxime Mouchet']
   spec.email         = ['mouchet.max@gmail.com']
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ''
+  spec.description   = %q{ActiveRecord mappings for the Lightroom Catalog.}
+  spec.summary       = %q{ActiveRecord mappings for the Lightroom Catalog.}
+  spec.homepage      = 'https://github.com/maxmouchet/lrcat.rb'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
