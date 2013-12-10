@@ -14,14 +14,21 @@ require 'lrcat/catalog/camera_model'
 require 'lrcat/catalog/camera_serial'
 
 module Lrcat
+
+  # The Catalog module takes care of the ActiveRecord connection and
+  # contains the ActiveRecord models.
   module Catalog
 
+    # Establish the connection to the catalog.
+    #
+    # @param path [String] the path to the catalog file.
     def self.open(path)
       ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: path)
     end
 
+    # Close the connection.
     def self.close
-      # TODO: Close the connection ?
+      ActiveRecord::Base.remove_connection
     end
 
   end
