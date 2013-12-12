@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+deploy:
+  provider: rubygems
+  api_key:
+    secure: emfzqvJLLpuWX5Es+DzVL6BoO7wdSftktZVpsHh4VkYXJ7yMr8o2KG1+ro0JH12piI5XKuyxIO9fshWFBPtCiheACHMUZyClSRRef4vONTL594wP90MgqHig12e0X+Aa48bNEo8eBjyF6+TbB0uTUkbJrpSKrPJ1H7WJjnOUcpc=
+  gem: lrcat
+  on:
+    repo: maxmouchet/lrcat.rb
