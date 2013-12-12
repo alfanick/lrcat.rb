@@ -41,8 +41,9 @@ module Lrcat
 
       belongs_to :library_file, foreign_key: 'rootFile'
 
-      has_one :develop_settings, foreign_key: 'image'
-      has_one :exif_metadata,    foreign_key: 'image'
+      has_one :develop_settings,    foreign_key: 'image'
+      has_one :exif_metadata,       foreign_key: 'image'
+      has_one :additional_metadata, foreign_key: 'image'
     end
 
   end
