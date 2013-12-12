@@ -33,5 +33,12 @@ module Lrcat
       ActiveRecord::Base.remove_connection
     end
 
+    # Get a list of the available models.
+    #
+    # @return [Array<Symbol>] the available models.
+    def self.get_models
+      self.constants.select { |c| Class === self.const_get(c) }
+    end
+
   end
 end
