@@ -1,4 +1,5 @@
 # Lrcat.rb
+[![Build Status](https://travis-ci.org/maxmouchet/lrcat.rb.png?branch=master)](https://travis-ci.org/maxmouchet/lrcat.rb)
 [![Code Climate](https://codeclimate.com/github/maxmouchet/lrcat.rb.png)](https://codeclimate.com/github/maxmouchet/lrcat.rb)
 [![Gem Version](https://badge.fury.io/rb/lrcat.png)](http://badge.fury.io/rb/lrcat)
 
