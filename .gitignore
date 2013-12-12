@@ -50,3 +50,6 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# Lightroom previews
+*.lrdata
