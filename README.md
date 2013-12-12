@@ -5,6 +5,15 @@
 
 ActiveRecord mappings for the Lightroom Catalog.
 
+## Compatibility
+
+#### Ruby
+Lrcat.rb is currently compatible only with Ruby interpreters that supports C extensions because of the `sqlite3` gem.  
+See [Add support for JRuby](https://github.com/maxmouchet/lrcat.rb/issues/1).
+
+#### Lightroom
+Currently I am working on the support of the Lightroom 5 (and future version) catalog.
+
 ## Installation
 
 Add this line to your application's Gemfile:
