@@ -7,6 +7,8 @@ require 'lrcat/catalog/library_root_folder'
 
 require 'lrcat/catalog/image'
 require 'lrcat/catalog/exif_metadata'
+require 'lrcat/catalog/additional_metadata'
+
 require 'lrcat/catalog/develop_settings'
 
 require 'lrcat/catalog/lens'
