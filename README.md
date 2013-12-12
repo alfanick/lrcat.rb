@@ -5,6 +5,8 @@
 
 ActiveRecord mappings for the Lightroom Catalog.
 
+[Documentation](http://rubydoc.info/gems/lrcat/frames)
+
 ## Compatibility
 
 #### Ruby
@@ -30,6 +32,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Basic usage
+
 ```ruby
 require 'lrcat'
 
@@ -40,6 +44,21 @@ Lrcat::Catalog.open('Lightroom 5 Catalog.lrcat')
 Lrcat::Catalog::CameraModel.all.each do |camera_model|
   puts "#{ camera_model.value } : #{ camera_model.images.count }"
 end
+```
+
+### Get the available models
+Currently all the models defined under lrcat/catalog/ are available. However in future versions, as more models are implemented, some may be unavailable depending on the version of the catalog.  
+If you want to list the available models you can use `Catalog#get_models`:  
+```ruby
+Lrcat::Catalog.get_models
+# => [:LibraryFile, :LibraryFolder, :LibraryRootFolder, :Image, :ExifMetadata, :AdditionalMetadata, :DevelopSettings, :Lens, :CameraModel, :CameraSerial]
+```
+
+### Get the available columns
+To know which field you can get on a specific model you can use `ActiveRecord::Base#column_names`:
+```ruby
+Lrcat::Catalog::Lens.column_names
+# => ["id_local", "searchIndex", "value"]
 ```
 
 ## Contributing
