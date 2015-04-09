@@ -7,6 +7,8 @@ ActiveRecord mappings for the Lightroom Catalog.
 
 [Documentation](http://rubydoc.info/gems/lrcat/frames)
 
+**Project Status :** Paused. I may work on it later but I don't have the time for now.   
+
 ## Compatibility
 
 #### Ruby
